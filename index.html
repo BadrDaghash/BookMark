@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="Mark.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+  
+</head>
+
+<body style="background-color: #f7ECDE;">
+
+    <div class="container">
+
+        <!-- main h1-->
+        <div class="row gy-5  ">
+            <div class="inner text-center pt-3 col-md-12 col-sm-12">
+                <h1 class="h1-mark position-relative">Bookmarker</h1>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container w-100 mx-auto bookmark-fav ">
+        <div class="row gy-5 pt-5 ">
+            <div class="inner col-md-12 col-sm-12 text-center   ">
+                <h2 class="main-h2"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i> </h2>
+            </div>
+
+        </div>
+
+        <div class="form-group ">
+            <label for="siteName" ><i class="fa-solid fa-book-bookmark pe-2"></i><span class="site"> Site Name</span></label>
+            <input type="text" id="siteName" placeholder="Bookmark Name" class="form-control w-100 mt-2" oninput="validateName()">
+            
+        </div>
+        <div class="form-group mt-3">
+            <label for="siteURL" ><i class="fa-solid fa-link pe-1 "></i><span class="site"> Site URL</span></label>
+            <input type="url" id="siteURL" placeholder="Website URL" class="form-control w-100 mt-2" oninput="validateURL()">
+            
+        </div>
+
+        <button class="btn btn-danger mt-5 btn-sub"  onclick="addProduct()" > Submit </button>
+
+
+       
+    </div>
+<div class="container mt-5">
+    
+    <table class="table ">
+        <thead>
+            <td class="ps-4" > Index</td>
+            <td class="pe-5"> Website Name</td>
+            <td class="pe-5"> Visit</td>
+            <td class="pe-5"> Delete</td>
+        </thead>
+        <tbody id="myBody">
+        </tbody>
+
+        
+    </table>
+</div>
+
+
+
+   
+
+    <script src="x.js"></script>
+
+    <script src="bootstrap.bundle.min.js"></script>
+   
+    
+</body>
+
+</html>
